@@ -1,15 +1,12 @@
 import pyautogui
+import time
+
+#input
+num = int(input('How often?: '))
+
+#Time between answering and clicking
+time.sleep(3)
 
 #how often repeated
-for _ in range(50):
+for _ in range(num):
     pyautogui.click()
-
-#imports
-from pwinput.mouse import Button, Controller
-
-mouse = Controller()
-
-# Press and release
-mouse.press(Button.left)
-
-mouse.release(Button.left)
